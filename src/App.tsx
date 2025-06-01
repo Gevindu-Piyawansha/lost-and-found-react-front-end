@@ -7,6 +7,8 @@ import FoundItems from './pages/FoundItems';
 import ItemDetails from './pages/ItemDetails';
 import Profile from './pages/Profile';
 import Navbar from './components/Navbar';
+import ReportLostItem from './pages/ReportLostItem';
+
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/report-lost" element={<ReportLostItem />} />
+
       </Routes>
     </Router>
   );
