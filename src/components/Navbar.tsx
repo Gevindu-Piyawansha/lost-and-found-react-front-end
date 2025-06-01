@@ -14,6 +14,9 @@ const Navbar = () => {
                 <Link to="/report-lost" className="hover:text-blue-500">
                     Report Lost
                 </Link>
+                <Link to="/report-found" className="hover:text-green-500">
+                    Report Found
+                </Link>
 
             </div>
         </nav>

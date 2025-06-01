@@ -8,6 +8,7 @@ import ItemDetails from './pages/ItemDetails';
 import Profile from './pages/Profile';
 import Navbar from './components/Navbar';
 import ReportLostItem from './pages/ReportLostItem';
+import ReportFoundItem from './pages/ReportFoundItem';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/report-lost" element={<ReportLostItem />} />
+        <Route path="/report-found" element={<ReportFoundItem />} />
 
       </Routes>
     </Router>
