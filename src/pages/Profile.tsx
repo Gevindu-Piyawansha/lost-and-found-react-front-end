@@ -1,10 +1,16 @@
+import React from 'react';
+import { AppContext } from '../context/AppContext';
+
 const Profile = () => {
-    const user = {
-        name: 'Gevindu Piyawansha',
-        email: 'gevindu.piyawansha@gmail.com',
-        role: 'Student',
-        registered: '2025-01-10',
-    };
+    const { user } = React.useContext(AppContext);
+
+    if (!user) {
+        return (
+            <div className="min-h-screen flex items-center justify-center text-gray-600">
+                Loading profile...
+            </div>
+        );
+    }
 
     return (
         <div className="min-h-screen bg-gray-100 py-12 px-4">
@@ -14,7 +20,7 @@ const Profile = () => {
                     <div><span className="font-semibold">Name:</span> {user.name}</div>
                     <div><span className="font-semibold">Email:</span> {user.email}</div>
                     <div><span className="font-semibold">Role:</span> {user.role}</div>
-                    <div><span className="font-semibold">Joined On:</span> {user.registered}</div>
+                    
                 </div>
             </div>
         </div>
