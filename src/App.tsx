@@ -11,6 +11,7 @@ import ItemDetails from './pages/ItemDetails';
 import SignIn from './pages/SignIn';
 import Profile from './pages/Profile'; // Optional
 import ItemsList from './pages/ItemsList';
+import Dashboard from "./components/Dashboard";
 
 import { AppContext, mockItems, mockUser, Item } from './context/AppContext';
 
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/item/:id" element={<ItemDetails />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/dashboard" element={<Dashboard />} /> 
         </Routes>
       </Router>
     </AppContext.Provider>
